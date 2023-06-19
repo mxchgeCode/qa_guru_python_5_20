@@ -20,5 +20,6 @@
     "createdAt": {
       "type": "string"
     }
+
   }
 }
