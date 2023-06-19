@@ -4,6 +4,7 @@ from helper import load_json_schema, CustomSession, reqres_session
 
 host = 'https://reqres.in'
 
+
 def test_login_success():
     data = {
         "email": "eve.holt@reqres.in",
@@ -149,8 +150,8 @@ def test_get_single_resource_schema_validation():
 
 
 def test_put_update_user_schema_validation():
-    name = "Kate"
-    job = "leader"
+    name = "John"
+    job = "Boss"
 
     schema = load_json_schema("put_update_user_schema.json")
 
@@ -160,7 +161,7 @@ def test_put_update_user_schema_validation():
 
 
 def test_post_create_user_schema_validation():
-    name = "jane"
+    name = "John"
     job = "job"
     schema = load_json_schema("post_create_user.json")
 
