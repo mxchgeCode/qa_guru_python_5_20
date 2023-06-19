@@ -1,6 +1,7 @@
 from jsonschema.validators import validate
 from helper import load_json_schema, CustomSession, reqres_session
 
+
 def test_get_single_user_not_found_schema_validation():
     schema = load_json_schema("get_single_user_not_found.json")
 
